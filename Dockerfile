@@ -10,3 +10,5 @@ RUN 	pip install -r /tmp/requirements.txt                               \
 
 COPY 	./config.json /docker-entrypoint.d/config.json
 COPY 	./webapp /bcp
+
+CMD ./start.sh
