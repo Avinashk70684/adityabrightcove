@@ -38,7 +38,7 @@ def brightcove(video_id):
         ]
     track_url = video["text_tracks"][1]["src"]
     return render_template(
-        "template.html",
+        "./templates/template.html",
         type="brightcove",
         video_name=video_name,
         video_url=video_url,
@@ -62,7 +62,7 @@ def jw(video_id):
     video_url = video["playlist"][0]["sources"][0]["file"]
     track_url = video["playlist"][0]["tracks"][0]["file"]
     return render_template(
-        "template.html",
+        "./templates/template.html",
         type="jw",
         video_name=video_name,
         video_url=video_url,
