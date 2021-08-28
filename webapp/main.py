@@ -68,3 +68,7 @@ def jw(video_id):
         video_url=video_url,
         track_url=track_url,
     )
+
+if __name__ == "__main__":
+    app.run()
+
